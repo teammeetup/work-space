@@ -1,5 +1,40 @@
 .container {
-    display:flex;
-    flex-flow: column;
-    align-items: center;
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px; /* 画像の下に少し余白を入れる */
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明の黒背景 */
+    color: #fff; /* テキストを白に */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.text h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.text p {
+    margin: 0;
+    font-size: 16px;
 }
