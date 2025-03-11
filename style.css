@@ -161,12 +161,13 @@ a {
 
 .slider{
     width: 30%;
-    margin: 30 auto;
+    margin: 0 auto;
     overflow: hidden;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 100px;
 }
 
 .slider__content{
