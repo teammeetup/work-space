@@ -59,3 +59,102 @@ h3{
     padding: 20px;
 
 }
+
+.header {
+    height: 80px;
+    background-color: #e39229;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+li {
+    list-style: none;
+    float: left;
+    font-size:  1.5em;
+    padding: 30px 20px;
+    padding-right: 40px;
+    font-family: "MS Gothic";
+    letter-spacing: 0.12em;  
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-logo {
+    font-size: 35px;
+    letter-spacing: 0.14em;
+} 
+
+.copyright {
+    position: absolute;
+    left: 630px;
+    bottom: 0; 
+    padding: 0 25px;
+    
+}
+
+.btn1 {
+    position: absolute;
+    left: 700px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+.btn2 {
+    position: absolute;
+    left: 800px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+
+
+
+
+.nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+}
+
+.nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fbf9f9;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+
+.nav_toggle i:nth-child(1) {
+    top: 0;
+}
+
+.nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
