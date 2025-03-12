@@ -61,7 +61,7 @@ h3{
 }
 
 iframe {
-    margin-left: 55px;
+    margin-left: 50px;
 }
 
 .header {
@@ -215,47 +215,30 @@ a {
     bottom: 0;
 }
 
-.slider{
-    width: 30%;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.slider__content{
-    min-width: 100%;
-    animation: sliderAnime 12s ease-in-out infinite;
-}
- 
-@keyframes sliderAnime{
-    0%{
-
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
     }
-    16.6%{
-        transform: translateX(0);
+    to {
+      transform: translateX(-100%);
     }
-    33.3%{
-        transform: translateX(-100%);
     }
-    50%{
-        transform: translateX(-100%);
+    .scroll-infinity__wrap {
+      display: flex;
+      overflow: hidden;
     }
-    66.6%{
-        transform: translateX(-200%);
+    .scroll-infinity__list {
+      display: flex;
+      list-style: none;
+      padding: 0
     }
-    83.2%{
-        transform: translateX(-200%);
+    .scroll-infinity__list--left {
+      animation: infinity-scroll-left 80s infinite linear 0.5s both;
     }
-    100%{
-        transform: translateX(0);
+    .scroll-infinity__item {
+      width: calc(148vw / 6);
     }
-}
-
-.slider__img{
-    max-width: 100%;
-    min-width: 100%;
-}
+    .scroll-infinity__item>img {
+      width: 400px;
+      height: 300px;
+    }
